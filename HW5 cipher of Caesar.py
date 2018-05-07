@@ -9,11 +9,6 @@ for i in message:
              new_mes.append(i)
     else:
         new_mes.append(alph[alph.index(i) + shift])
-#with open('word.txt','w') as f:
-#    for i in new_mes:
-#        f.write(i)
-#with open('word.txt','r') as f:
-#    print('Зашифрованный текст:\n',f.read())
 for i in range(len(new_mes)):
     new_mes2 += new_mes[i]
 print(new_mes2)
