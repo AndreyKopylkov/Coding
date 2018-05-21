@@ -10,3 +10,4 @@ def lineSearch(list, x):
 		if string == x:
 			result = index
 	return result
+
