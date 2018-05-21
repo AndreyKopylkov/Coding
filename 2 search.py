@@ -1,31 +1,13 @@
-# List = [1, 2, 4, 6, 7, 9]
-# key = 2
-#
-# def search(List, key):
-#     left = -1
-#     right = len(List)
-#     while right > left + 1:
-#         middle = left + right // 2
-#         if List[middle] > key:
-#             right = middle
-#         else:
-#             left = middle
-#     return right
-#
-# print(search(List, key))
-
-A = [1, 2, 3, 4]
-key = 4
-
-def LowerBound(A, key):
+list = [1, 2, 4, 6, 7, 9]
+searchSymb = int(input('Введите искомый символ: '))
+def search(list, key):
     left = -1
-    right = len(A)
+    right = len(list)
     while right > left + 1:
-        middle = (left + right) // 2
-        if A[middle] <= key:
+        middle = left + right // 2
+        if list[middle] > key:
             right = middle
         else:
             left = middle
     return right
-
-print(LowerBound(A, key))
+print('Номер вашего символа: ', search(list, searchSymb) - 1)
