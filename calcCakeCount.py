@@ -55,4 +55,3 @@ def calcCakeCount (personsCount):
         return int(personsCount * cake_count_for_big_group)
 
 print (calcCakeCount(8))
-
