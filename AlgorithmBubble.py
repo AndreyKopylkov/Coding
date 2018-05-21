@@ -1,12 +1,8 @@
-def bubbleSort(arrayToSort):
-    a = arrayToSort
-    for i in range(len(a),0,-1):
-        for j in range(1, i):
-            if a[j-1] > a[j]:
-                tmp = a[j-1]
-                a[j-1] = a[j]
-                a[j] = tmp
-                print (a)
-    return a
-ary = [5, 0, 10, 4, 1, 5, 8, 4, 3, 12, 41]
-print (bubbleSort(ary))
+list = [8, 1, 2, 6, 0, 9, 23, 56, 100, 93, 82, 8, 42]
+counter = 1
+while counter < len(list):
+     for i in range(len(list) - counter):
+          if list[i] > list[i + 1]:
+              list[i], list[i + 1] = list[i + 1], list[i]
+     counter += 1
+     print(list)

@@ -1,4 +1,4 @@
-list = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
+list = ['s', 'e', 'e', 'y', 'o', 'u', 's', 'p', 'a', 'c', 'e', 'c', 'o', 'w', 'b', 'o', 'y']
 searchSymb = input('Введите искомый символ: ')
 print(list.index(searchSymb))
 def lineSearch(list, x):

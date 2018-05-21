@@ -1,11 +1,11 @@
-list = [1, 2, 4, 6, 7, 9]
+list = [8, 1, 2, 6, 0, 9, 23, 56, 100, 93, 82, 8, 42]
 searchSymb = int(input('Введите искомый символ: '))
-def search(list, key):
+def search(List, key):
     left = -1
-    right = len(list)
+    right = len(List)
     while right > left + 1:
         middle = left + right // 2
-        if list[middle] > key:
+        if List[middle] > key:
             right = middle
         else:
             left = middle
