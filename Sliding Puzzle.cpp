@@ -2,7 +2,6 @@
 // Created by Андрей on 21.05.2018.
 //
 
-
 Subject: #include <iostream>
 #include <iostream>
 #include <stdlib.h>
