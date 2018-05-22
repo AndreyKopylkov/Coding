@@ -1,14 +1,13 @@
-def insertion_sort(arrayToSort):
+list = [8, 1, 2, 6, 0, 9, 23, 56, 100, 93, 82, 8, 42]
+def past_sort(arrayToSort):
     a = arrayToSort
     for i in range(len(a)):
-        v = a[i]
-        j = i;
-        while (a[j-1] > v) and (j > 0):
-            a[j] = a[j-1]
-            j = j - 1
-        a[j] = v
-        print a
+        num = a[i]
+        indexNum = i
+        while (a[indexNum - 1] > num) and (indexNum > 0):
+            a[indexNum] = a[indexNum - 1]
+            indexNum = indexNum - 1
+        a[indexNum] = num
+        print (a)
     return a
-
-ary = [54,1,2,3,52,3,1,2,3,5,3,67,3,2,543]
-print insertion_sort(ary)
+print (past_sort(list))
